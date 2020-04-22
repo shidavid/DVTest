@@ -1,4 +1,4 @@
-![](https://user-gold-cdn.xitu.io/2020/4/22/1719fb0e384d4766?w=640&h=360&f=gif&s=597064)
+![](https://user-gold-cdn.xitu.io/2020/4/22/1719fb4a6e6ca768?w=480&h=270&f=gif&s=393845)
 
 介绍:
 1. 利用FFmpeg进行拉流, 使用原生VideoToolBox 硬编解码,  使用OpenGL渲染视频画面
