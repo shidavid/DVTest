@@ -12,6 +12,8 @@
 
 @property(nonatomic, strong) DVLivePlayer *livePlayer;
 
+@property(nonatomic, strong) NSMutableArray<DVLivePlayer *> *playerArray;
+
 @end
 
 @implementation H264HEVCLivePlayerViewController
@@ -34,6 +36,15 @@
     [self.livePlayer stopPlay];
 }
 
+- (void)dealloc {
+    if (self.playerArray) {
+        for (DVLivePlayer *play in self.playerArray) {
+            [play stopPlay];
+        }
+        [self.playerArray removeAllObjects];
+    }
+}
+
 
 - (void)initLivePlayer {
     self.livePlayer = [[DVLivePlayer alloc] initWithPreViewFrame:DVFrame.frame_full];
@@ -43,6 +54,19 @@
     [self.view insertSubview:self.livePlayer.preView atIndex:0];
     [self initBtnRecord];
     [self initBtnScreenShot];
+    
+    self.playerArray = [NSMutableArray array];
+    for (int i = 1; i < 8; ++i) {
+        DVLivePlayer *play = ({
+            DVLivePlayer *p = [[DVLivePlayer alloc] initWithPreViewFrame:DVFrame.frame_full];
+            [p connectToURL:self.url];
+            [p startPlay];
+            [self.view insertSubview:p.preView atIndex:i];
+            p;
+        });
+        [self.playerArray addObject:play];
+    }
+    
 }
 
 

@@ -44,12 +44,19 @@
 
 #pragma mark - <-- Init -->
 - (void)initRender {
+//
+//    const GLfloat vertices[] = {
+//          -1.0f, -1.0f, 0.0f,   0.0f, 1.0f,
+//           1.0f, -1.0f, 0.0f,   1.0f, 1.0f,
+//          -1.0f,  1.0f, 0.0f,   0.0f, 0.0f,
+//           1.0f,  1.0f, 0.0f,   1.0f, 0.0f,
+//    };
     
     const GLfloat vertices[] = {
-          -1.0f, -1.0f, 0.0f,   0.0f, 1.0f,
-           1.0f, -1.0f, 0.0f,   1.0f, 1.0f,
           -1.0f,  1.0f, 0.0f,   0.0f, 0.0f,
            1.0f,  1.0f, 0.0f,   1.0f, 0.0f,
+          -1.0f,  -1.0f, 0.0f,   0.0f, 1.0f,
+           1.0f,  -1.0f, 0.0f,   1.0f, 1.0f,
     };
     
     const GLubyte indices[] = {
