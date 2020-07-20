@@ -1,0 +1,6 @@
+framework module DVAVKit {
+  umbrella header "DVAVKit.h"
+
+  export *
+  module * { export * }
+}
