@@ -49,7 +49,8 @@
     
 //    self.listView.liveURLText.text = @"rtmp://192.168.3.57:1935/live/stream";
 //    self.listView.liveURLText.text = @"rtmp://192.168.3.57:1935/live/pc";
-    self.listView.liveURLText.text = @"rtsp://192.168.5.24:11554/chn=1/type=0";
+//    self.listView.liveURLText.text = @"rtsp://192.168.5.24:11554/chn=1/type=0";
+    self.listView.liveURLText.text = @"rtmp://mdvr.meiligao.org:27010/live/0861585042696425_CH1_AV_LIVE";
 }
 
 
