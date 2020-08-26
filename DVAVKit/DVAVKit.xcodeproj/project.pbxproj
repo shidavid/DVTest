@@ -62,7 +62,7 @@
 		3E5C768F2427D6F8004002B3 /* DVVideoH264HardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C768D2427D6F8004002B3 /* DVVideoH264HardwareDecoder.m */; };
 		3E5C76922427D70E004002B3 /* DVVideoHEVCHardwareDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5C76902427D70E004002B3 /* DVVideoHEVCHardwareDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E5C76932427D70E004002B3 /* DVVideoHEVCHardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C76912427D70E004002B3 /* DVVideoHEVCHardwareDecoder.m */; };
-		FF1F5C36244053A800150FA6 /* DVAVKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E28391E2436574C00EC34A4 /* DVAVKitBundle.bundle */; };
+		FF605F9B24F65E0500DFA5C0 /* DVAVKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E28391E2436574C00EC34A4 /* DVAVKitBundle.bundle */; };
 		FF7FA8A924419EA300579EC6 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83624419EA300579EC6 /* hwcontext.h */; };
 		FF7FA8AA24419EA300579EC6 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83724419EA300579EC6 /* time.h */; };
 		FF7FA8AB24419EA300579EC6 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83824419EA300579EC6 /* hwcontext_cuda.h */; };
@@ -1977,7 +1977,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF1F5C36244053A800150FA6 /* DVAVKitBundle.bundle in Resources */,
+				FF605F9B24F65E0500DFA5C0 /* DVAVKitBundle.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
