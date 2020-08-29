@@ -139,12 +139,19 @@
 }
 
 - (NSString *)loadShaderStrWithBundleName:(NSString *)bundleName {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"Frameworks/DVAVKit.framework/DVAVKitBundle"
-                                                           ofType:@"bundle"];
     
-    if (!bundlePath) {
-        bundlePath = [[NSBundle mainBundle] pathForResource:@"DVAVKitBundle" ofType:@"bundle"];
+    NSString *bundlePath;
+    
+    NSArray<NSString *> *array = @[
+        @"DVAVKit", @"framework",
+        @"DVAVKitBundle", @"bundle",
+        @"Frameworks/DVAVKit.framework/DVAVKitBundle", @"bundle",
+    ];
+    
+    for (int i = 0; !bundlePath && i < array.count; i+=2) {
+        bundlePath = [[NSBundle mainBundle] pathForResource:array[i] ofType:array[i+1]];
     }
+    NSAssert(bundlePath, @"寻找不到文件");
     
     NSString *filePath = [bundlePath stringByAppendingPathComponent:bundleName];
     
