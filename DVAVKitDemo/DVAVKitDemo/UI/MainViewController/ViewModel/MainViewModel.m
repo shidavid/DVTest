@@ -13,6 +13,7 @@
 - (NSDictionary<NSString *,NSString *> *)tableItems {
     return @{
         @"直播" : @"LiveListViewController",
+        @"录音" : @"RecordViewController",
     };
 }
 

@@ -25,6 +25,8 @@
 		FF1F5C3A2440545300150FA6 /* DVAVKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF21412E2440086400D11B08 /* DVAVKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF1F5C3B2440545300150FA6 /* DVAVKitBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = FF2141302440086400D11B08 /* DVAVKitBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF37028F244FDC730094D292 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF37028B244FDC730094D292 /* README.md */; };
+		FF518689250B846C00566AC9 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF518687250B846C00566AC9 /* RecordViewController.m */; };
+		FF51868A250B846C00566AC9 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF518688250B846C00566AC9 /* RecordViewController.xib */; };
 		FF65329F2420A4F800D01F1D /* icon-dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FF65329E2420A4F800D01F1D /* icon-dog.jpg */; };
 		FF90E1B5241F615F00BCA018 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF90E1B4241F615F00BCA018 /* AppDelegate.m */; };
 		FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90E1BF241F616100BCA018 /* Assets.xcassets */; };
@@ -149,6 +151,9 @@
 		FF1F5C2A244024F100150FA6 /* HEVCLiveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HEVCLiveViewController.m; sourceTree = "<group>"; };
 		FF2141282440086400D11B08 /* DVAVKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DVAVKit.xcodeproj; path = ../DVAVKit/DVAVKit.xcodeproj; sourceTree = "<group>"; };
 		FF37028B244FDC730094D292 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
+		FF518686250B846C00566AC9 /* RecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecordViewController.h; sourceTree = "<group>"; };
+		FF518687250B846C00566AC9 /* RecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecordViewController.m; sourceTree = "<group>"; };
+		FF518688250B846C00566AC9 /* RecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RecordViewController.xib; sourceTree = "<group>"; };
 		FF65329E2420A4F800D01F1D /* icon-dog.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "icon-dog.jpg"; sourceTree = "<group>"; };
 		FF90E1B0241F615F00BCA018 /* DVAVKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DVAVKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90E1B3241F615F00BCA018 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -334,6 +339,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FF51867E250B83DB00566AC9 /* 录音 */ = {
+			isa = PBXGroup;
+			children = (
+				FF518682250B840800566AC9 /* ViewController */,
+			);
+			path = "录音";
+			sourceTree = "<group>";
+		};
+		FF518682250B840800566AC9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF518686250B846C00566AC9 /* RecordViewController.h */,
+				FF518687250B846C00566AC9 /* RecordViewController.m */,
+				FF518688250B846C00566AC9 /* RecordViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		FF65329B2420A31800D01F1D /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +418,7 @@
 				FF90E273241F750400BCA018 /* RootNavigationController.m */,
 				FF90E303241F7AA600BCA018 /* MainViewController */,
 				FFF84F3824400DE600DD23EF /* 直播 */,
+				FF51867E250B83DB00566AC9 /* 录音 */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -478,7 +502,6 @@
 				FF90E304241F7AB700BCA018 /* ViewController */,
 				FF90E305241F7ABD00BCA018 /* View */,
 				FF90E307241F7AC500BCA018 /* ViewModel */,
-				FF90E306241F7AC100BCA018 /* Model */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -499,13 +522,6 @@
 				FF90E309241F7B4100BCA018 /* MainTableView.m */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		FF90E306241F7AC100BCA018 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		FF90E307241F7AC500BCA018 /* ViewModel */ = {
@@ -870,6 +886,7 @@
 				FF90E1C0241F616100BCA018 /* Assets.xcassets in Resources */,
 				FF1F5C1B24401C6500150FA6 /* LivePlayerViewController.xib in Resources */,
 				FF9A1FD72445C15E005B9CFE /* icon_message_error.png in Resources */,
+				FF51868A250B846C00566AC9 /* RecordViewController.xib in Resources */,
 				FF1F5C1624401C5700150FA6 /* LiveViewController.xib in Resources */,
 				FF65329F2420A4F800D01F1D /* icon-dog.jpg in Resources */,
 			);
@@ -929,6 +946,7 @@
 				FF90E30D241F7DC800BCA018 /* MainViewModel.m in Sources */,
 				FF90E338241F845300BCA018 /* NSObject+Runtime_Class.m in Sources */,
 				FF90E2E0241F774700BCA018 /* UIImage+Common.m in Sources */,
+				FF518689250B846C00566AC9 /* RecordViewController.m in Sources */,
 				FF90E2DB241F774700BCA018 /* UIViewController+Common.m in Sources */,
 				FF90E345241F85ED00BCA018 /* AppDelegate+Notification.m in Sources */,
 				FF90E2DD241F774700BCA018 /* UITextField+Common.m in Sources */,
