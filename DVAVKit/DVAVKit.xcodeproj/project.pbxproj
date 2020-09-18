@@ -62,7 +62,6 @@
 		3E5C768F2427D6F8004002B3 /* DVVideoH264HardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C768D2427D6F8004002B3 /* DVVideoH264HardwareDecoder.m */; };
 		3E5C76922427D70E004002B3 /* DVVideoHEVCHardwareDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E5C76902427D70E004002B3 /* DVVideoHEVCHardwareDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3E5C76932427D70E004002B3 /* DVVideoHEVCHardwareDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E5C76912427D70E004002B3 /* DVVideoHEVCHardwareDecoder.m */; };
-		FF605F9B24F65E0500DFA5C0 /* DVAVKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E28391E2436574C00EC34A4 /* DVAVKitBundle.bundle */; };
 		FF7FA8A924419EA300579EC6 /* hwcontext.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83624419EA300579EC6 /* hwcontext.h */; };
 		FF7FA8AA24419EA300579EC6 /* time.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83724419EA300579EC6 /* time.h */; };
 		FF7FA8AB24419EA300579EC6 /* hwcontext_cuda.h in Headers */ = {isa = PBXBuildFile; fileRef = FF7FA83824419EA300579EC6 /* hwcontext_cuda.h */; };
@@ -185,6 +184,12 @@
 		FF93DD9F2435BDBF00736A45 /* DVGLContextLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = FF93DD942435BDBF00736A45 /* DVGLContextLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF93DDA22435C01F00736A45 /* DVGLPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = FF93DDA02435C01F00736A45 /* DVGLPreview.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FF93DDA32435C01F00736A45 /* DVGLPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = FF93DDA12435C01F00736A45 /* DVGLPreview.m */; };
+		FFA2ABCA251457E3006585C0 /* pre_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9352436E1F000D3828F /* pre_vertex.vs */; };
+		FFA2ABCB251457E3006585C0 /* pre_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9332436E1E100D3828F /* pre_fragment.fs */; };
+		FFA2ABCC251457E3006585C0 /* color_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838F7243653EA00EC34A4 /* color_vertex.vs */; };
+		FFA2ABCD251457E3006585C0 /* color_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838F6243653EA00EC34A4 /* color_fragment.fs */; };
+		FFA2ABCE251457E3006585C0 /* png_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838FC243653EA00EC34A4 /* png_vertex.vs */; };
+		FFA2ABCF251457E3006585C0 /* png_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838FA243653EA00EC34A4 /* png_fragment.fs */; };
 		FFA9C9372436E1F600D3828F /* pre_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9332436E1E100D3828F /* pre_fragment.fs */; };
 		FFA9C9382436E1F600D3828F /* pre_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9352436E1F000D3828F /* pre_vertex.vs */; };
 		FFAEB24F243C5ABD00C27A36 /* DVAudioPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = FFAEB24D243C5ABD00C27A36 /* DVAudioPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1977,7 +1982,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF605F9B24F65E0500DFA5C0 /* DVAVKitBundle.bundle in Resources */,
+				FFA2ABCF251457E3006585C0 /* png_fragment.fs in Resources */,
+				FFA2ABCE251457E3006585C0 /* png_vertex.vs in Resources */,
+				FFA2ABCB251457E3006585C0 /* pre_fragment.fs in Resources */,
+				FFA2ABCC251457E3006585C0 /* color_vertex.vs in Resources */,
+				FFA2ABCD251457E3006585C0 /* color_fragment.fs in Resources */,
+				FFA2ABCA251457E3006585C0 /* pre_vertex.vs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
