@@ -410,7 +410,7 @@
     
     if (stream->codecpar->codec_id == AV_CODEC_ID_H264) {
         NSArray<NSData *> *extra = [FFUtils analyH264SpsPpsWithExtradata:stream->codecpar->extradata
-                                                 size:stream->codecpar->extradata_size];
+                                                                    size:stream->codecpar->extradata_size];
         videoInfo.vps = nil;
         videoInfo.sps = extra ? (extra.count > 0 ? extra[0] : nil) : nil;
         videoInfo.pps = extra ? (extra.count > 1 ? extra[1] : nil) : nil;
