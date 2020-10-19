@@ -65,8 +65,8 @@
     };
     
     
-    [self createBuffer:&_vertexBuffer vertices:vertices size:sizeof(vertices)];
-    [self createBuffer:&_indexBuffer indices:indices size:sizeof(indices)];
+    [self createBuffer:&_vertexBuffer vertices:(GLfloat *)vertices size:sizeof(vertices)];
+    [self createBuffer:&_indexBuffer indices:(GLubyte *)indices size:sizeof(indices)];
     
     
     _positionAttr = [self getAttribLocationWithName:@"position"];
