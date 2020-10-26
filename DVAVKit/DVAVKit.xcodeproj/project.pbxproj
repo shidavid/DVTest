@@ -190,6 +190,7 @@
 		FFA2ABCD251457E3006585C0 /* color_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838F6243653EA00EC34A4 /* color_fragment.fs */; };
 		FFA2ABCE251457E3006585C0 /* png_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838FC243653EA00EC34A4 /* png_vertex.vs */; };
 		FFA2ABCF251457E3006585C0 /* png_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = 3E2838FA243653EA00EC34A4 /* png_fragment.fs */; };
+		FFA8EA5B2546D42000014B2B /* DVAVKitBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3E28391E2436574C00EC34A4 /* DVAVKitBundle.bundle */; };
 		FFA9C9372436E1F600D3828F /* pre_fragment.fs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9332436E1E100D3828F /* pre_fragment.fs */; };
 		FFA9C9382436E1F600D3828F /* pre_vertex.vs in Resources */ = {isa = PBXBuildFile; fileRef = FFA9C9352436E1F000D3828F /* pre_vertex.vs */; };
 		FFAEB24F243C5ABD00C27A36 /* DVAudioPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = FFAEB24D243C5ABD00C27A36 /* DVAudioPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -1986,6 +1987,7 @@
 				FFA2ABCE251457E3006585C0 /* png_vertex.vs in Resources */,
 				FFA2ABCB251457E3006585C0 /* pre_fragment.fs in Resources */,
 				FFA2ABCC251457E3006585C0 /* color_vertex.vs in Resources */,
+				FFA8EA5B2546D42000014B2B /* DVAVKitBundle.bundle in Resources */,
 				FFA2ABCD251457E3006585C0 /* color_fragment.fs in Resources */,
 				FFA2ABCA251457E3006585C0 /* pre_vertex.vs in Resources */,
 			);

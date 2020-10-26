@@ -55,17 +55,17 @@
     [self initBtnRecord];
     [self initBtnScreenShot];
     
-    self.playerArray = [NSMutableArray array];
-    for (int i = 1; i < 8; ++i) {
-        DVLivePlayer *play = ({
-            DVLivePlayer *p = [[DVLivePlayer alloc] initWithPreViewFrame:DVFrame.frame_full];
-            [p connectToURL:self.url];
-            [p startPlay];
-            [self.view insertSubview:p.preView atIndex:i];
-            p;
-        });
-        [self.playerArray addObject:play];
-    }
+//    self.playerArray = [NSMutableArray array];
+//    for (int i = 0; i < 1; ++i) {
+//        DVLivePlayer *play = ({
+//            DVLivePlayer *p = [[DVLivePlayer alloc] initWithPreViewFrame:DVFrame.frame_full];
+//            [p connectToURL:self.url];
+//            [p startPlay];
+//            [self.view insertSubview:p.preView atIndex:i];
+//            p;
+//        });
+//        [self.playerArray addObject:play];
+//    }
     
 }
 

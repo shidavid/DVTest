@@ -21,9 +21,6 @@
 		FF1F5C1E24401C8B00150FA6 /* H264LiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C1D24401C8B00150FA6 /* H264LiveViewController.m */; };
 		FF1F5C2124401CAD00150FA6 /* H264HEVCLivePlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C2024401CAD00150FA6 /* H264HEVCLivePlayerViewController.m */; };
 		FF1F5C2B244024F100150FA6 /* HEVCLiveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF1F5C2A244024F100150FA6 /* HEVCLiveViewController.m */; };
-		FF1F5C392440545300150FA6 /* DVAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF21412E2440086400D11B08 /* DVAVKit.framework */; };
-		FF1F5C3A2440545300150FA6 /* DVAVKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF21412E2440086400D11B08 /* DVAVKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		FF1F5C3B2440545300150FA6 /* DVAVKitBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = FF2141302440086400D11B08 /* DVAVKitBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FF37028F244FDC730094D292 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = FF37028B244FDC730094D292 /* README.md */; };
 		FF518689250B846C00566AC9 /* RecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF518687250B846C00566AC9 /* RecordViewController.m */; };
 		FF51868A250B846C00566AC9 /* RecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF518688250B846C00566AC9 /* RecordViewController.xib */; };
@@ -77,6 +74,9 @@
 		FF9A1FD72445C15E005B9CFE /* icon_message_error.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9A1FD32445C15E005B9CFE /* icon_message_error.png */; };
 		FF9A1FD82445C15E005B9CFE /* icon_message_info.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9A1FD42445C15E005B9CFE /* icon_message_info.png */; };
 		FF9A1FD92445C15E005B9CFE /* icon_message_warn.png in Resources */ = {isa = PBXBuildFile; fileRef = FF9A1FD52445C15E005B9CFE /* icon_message_warn.png */; };
+		FFA8EA562546D39200014B2B /* DVAVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF21412E2440086400D11B08 /* DVAVKit.framework */; };
+		FFA8EA572546D39200014B2B /* DVAVKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FF21412E2440086400D11B08 /* DVAVKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FFA8EA592546D3C900014B2B /* DVAVKitBundle.bundle in Embed PlugIns */ = {isa = PBXBuildFile; fileRef = FF2141302440086400D11B08 /* DVAVKitBundle.bundle */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FFF84F3424400D9C00DD23EF /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF84F3224400D4700DD23EF /* libc++.tbd */; };
 		FFF84F3524400D9C00DD23EF /* libiconv.2.4.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF84F2E24400D3200DD23EF /* libiconv.2.4.0.tbd */; };
 		FFF84F3624400D9C00DD23EF /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF84F2D24400D2600DD23EF /* libbz2.1.0.tbd */; };
@@ -101,24 +101,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		FF1F5C3C2440545300150FA6 /* Embed Frameworks */ = {
+		FFA8EA582546D39200014B2B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				FF1F5C3A2440545300150FA6 /* DVAVKit.framework in Embed Frameworks */,
+				FFA8EA572546D39200014B2B /* DVAVKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF1F5C3D2440545300150FA6 /* Embed PlugIns */ = {
+		FFA8EA5A2546D3C900014B2B /* Embed PlugIns */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				FF1F5C3B2440545300150FA6 /* DVAVKitBundle.bundle in Embed PlugIns */,
+				FFA8EA592546D3C900014B2B /* DVAVKitBundle.bundle in Embed PlugIns */,
 			);
 			name = "Embed PlugIns";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,7 +270,7 @@
 				FFF84F3424400D9C00DD23EF /* libc++.tbd in Frameworks */,
 				FFF84F3724400D9C00DD23EF /* libz.1.2.5.tbd in Frameworks */,
 				FFF84F3524400D9C00DD23EF /* libiconv.2.4.0.tbd in Frameworks */,
-				FF1F5C392440545300150FA6 /* DVAVKit.framework in Frameworks */,
+				FFA8EA562546D39200014B2B /* DVAVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -803,8 +803,8 @@
 				FF90E1AC241F615F00BCA018 /* Sources */,
 				FF90E1AD241F615F00BCA018 /* Frameworks */,
 				FF90E1AE241F615F00BCA018 /* Resources */,
-				FF1F5C3C2440545300150FA6 /* Embed Frameworks */,
-				FF1F5C3D2440545300150FA6 /* Embed PlugIns */,
+				FFA8EA582546D39200014B2B /* Embed Frameworks */,
+				FFA8EA5A2546D3C900014B2B /* Embed PlugIns */,
 			);
 			buildRules = (
 			);
